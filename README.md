@@ -9,9 +9,8 @@ Released as free software with a BSD style license (see LICENSE below).
 EXAMPLES
 ========
 List all options and brief explanation on usage:
-<pre>
+
     image-folder-diff.py --help
-</pre>
 
 List all files in source folder that are not in destination folder:
 
