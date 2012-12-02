@@ -5,13 +5,23 @@ Script to help find missing and moved image files.  This is a personal tools I u
 
 Released as free software with a BSD style license (see LICENSE below).
 
+
 EXAMPLES
 ========
-> image-folder-diff.py --help                               # List all options and brief explanation on usage.
-> image-folder-diff.py missing source-folder dest-folder    # Lists all files in source folder that are not in test folder.
-> image-folder-diff.py savedb source-folder source.ifd      # Stores all file metadata in a file, this means you can show differences between dates or on different devices easily.
-> image-folder-diff.py missing yesterday.ifd pictures       # Show what files have been removed since yesterday.
-> image-folder-diff.py missing -v pictures backup           # Show difference with verbose information, e.g. renamed files.
+List all options and brief explanation on usage:
+    image-folder-diff.py --help
+
+List all files in source folder that are not in destination folder:
+    image-folder-diff.py missing source destination
+
+Store file metadata in a file (this means you can show differences between dates or on different devices easily):
+    image-folder-diff.py savedb source source.ifd
+
+Show what files have been removed since yesterday:
+    image-folder-diff.py missing yesterday.ifd pictures
+
+Show difference with verbose information, e.g. renamed files:
+    image-folder-diff.py missing -v pictures backup
 
 
 LICENSE
